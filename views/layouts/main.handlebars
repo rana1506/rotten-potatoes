@@ -11,6 +11,7 @@
     <div class="container-fluid">    
       <ul class="nav navbar-nav navbar-right">
         {{#if currentUser}}
+          <p>User: {{currentUser.username}}</p>
           <li><a href="/logout">Logout</a></li>
         {{else}}
           <li><a href="/login">Login</a></li>
