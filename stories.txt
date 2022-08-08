@@ -1,0 +1,15 @@
+npm i bcrypt    bcryptjs    body-parser    cookie-parser    dotenv    express   express-handlebars    jsonwebtoken    method-override    mongoose
+
+URL                     HTTP Verb   Action
+/                       GET         home
+reviews/	            GET	        index
+/reviews/new	        GET	        new
+/reviews	            POST	    create
+/reviews/:id	        GET	        show
+/reviews/:id/edit	    GET	        edit
+/reviews/:id	        PUT/PATCH	update
+/reviews/:id	        DELETE	    destroy
+/reviews/comments	    POST	    create
+/reviews/comments/:id   DELETE	    destroy
+
+Remember, you'll have to add currentUser to all of the routes that call res.render() so the main templates work. This may seem like some duplication of code, and it is.

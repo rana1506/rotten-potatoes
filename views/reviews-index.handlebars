@@ -1,0 +1,11 @@
+<!-- views/reviews-index.handlebars -->
+
+<h1>Reviews</h1>
+{{#if currentUser}}
+  <a href="/reviews/new">New Review</a>
+{{/if}}
+{{#each reviews}}
+  <h2><a href="/reviews/{{this._id}}">{{this.title}}</a></h2>
+  <h2>{{this.movieTitle}}</h2>  
+  <small>{{this.description}}</small>
+{{/each}}
