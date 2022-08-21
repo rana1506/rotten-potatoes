@@ -1,3 +1,4 @@
+
 npm i bcrypt    bcryptjs    body-parser    cookie-parser    dotenv    express   express-handlebars    jsonwebtoken    method-override    mongoose
 
 URL                     HTTP Verb   Action
